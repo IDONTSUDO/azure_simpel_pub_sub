@@ -19,8 +19,6 @@ const queueServiceClient = new QueueServiceClient(`https://${env.account}.queue.
 
 async function main() {
 	const queueClient = await queueServiceClient.getQueueClient(env.queueName);
-	await queueClient.sendMessage('Hello World!');
-
 	const dequeueResponse = await queueClient.receiveMessages();
 	const dequeueMessageItem = dequeueResponse.receivedMessageItems[0];
 	if (dequeueMessageItem.length == 1) {
