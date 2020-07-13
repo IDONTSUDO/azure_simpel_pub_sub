@@ -1,0 +1,35 @@
+{
+    "name": "pub_sub_threads_azure",
+    "version": "1.0.0",
+    "description": "",
+    "main": "queues-quickstart-v12.js",
+    "scripts": {
+        "dev": "nodemon  --watch ./src --exec node ./src/main.js",
+        "format": "prettier  --config ./.prettierrc.json --write \"src/**/*.js",
+        "prod": "",
+        "lint": "eslint .",
+        "test":""
+    },
+    "engines": {
+        "node": "12.13.0"
+    },
+    "author": "IDONTSUDO",
+    "license": "MIT",
+    "dependencies": {
+        "@azure/identity": "^1.0.3",
+        "@azure/logger": "^1.0.0",
+        "@azure/storage-queue": "^12.1.0-preview.1",
+        "azure-arm-storage": "^8.1.0",
+        "bluebird": "^3.7.2",
+        "eslint": "^7.4.0",
+        "eslint-plugin-node": "^11.1.0",
+        "mongoose": "^5.9.22",
+        "ms-rest-azure": "^3.0.0",
+        "nodemon": "^2.0.4",
+        "prettier": "^2.0.5"
+    },
+    "devDependencies": {
+        "firebase-functions-test": "^0.2.1",
+        "mocha": "^8.0.1"
+    }
+}
